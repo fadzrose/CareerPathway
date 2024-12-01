@@ -9,3 +9,11 @@ registerLink.onclick = () => {
 loginLink.onclick = () => {
     wrapper.classList.remove('active')
 }
+
+// Example: Dynamic Greeting
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header h1");
+  const userName = "John Doe"; // Replace with dynamic data
+  header.textContent = Welcome, ${userName};
+});
+
