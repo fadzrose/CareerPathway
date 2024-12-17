@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendation Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .career-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #eaf4ff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .career-details {
+            flex: 2;
+        }
+
+        .career-actions {
+            text-align: right;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #005fa3;
+        }
+
+        .filter-section {
+            margin-bottom: 20px;
+        }
+
+        .filter-section input,
+        .filter-section select {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Career Recommendation Engine</h1>
+        <p>Explore personalized career suggestions based on your skills</p>
+    </header>
+
+    <div class="container">
+        <!-- Filters -->
+        <div class="filter-section">
+        <form>
+            <input type="text" placeholder="Search careers...">
+            <select>
+                <option value="">Filter by Industry</option>
+                <option value="tech">Technology</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="education">Education</option>
+            </select>
+            <button class="btn">Apply Filters</button>
+        </form>
+        </div>
+
+        <!-- Career Recommendation List -->
+        <div class="career-card">
+            <div class="career-details">
+                <h2>Software Developer</h2>
+                <p><strong>Compatibility Score:</strong> 85%</p>
+                <p>Design and build software applications, troubleshoot issues, and collaborate with teams.</p>
+            </div>
+            <div class="career-actions">
+                <a href="#" class="btn">View Details</a>
+                <a href="#" class="btn">Explore Resources</a>
+            </div>
+        </div>
+
+        <div class="career-card">
+            <div class="career-details">
+                <h2>Data Scientist</h2>
+                <p><strong>Compatibility Score:</strong> 90%</p>
+                <p>Analyze large datasets, create predictive models, and derive actionable insights.</p>
+            </div>
+            <div class="career-actions">
+                <a href="#" class="btn">View Details</a>
+                <a href="#" class="btn">Explore Resources</a>
+            </div>
+        </div>
+
+        <div class="career-card">
+            <div class="career-details">
+                <h2>Graphic Designer</h2>
+                <p><strong>Compatibility Score:</strong> 75%</p>
+                <p>Create visual concepts to communicate ideas, design layouts, and develop branding materials.</p>
+            </div>
+            <div class="career-actions">
+                <a href="#" class="btn">View Details</a>
+                <a href="#" class="btn">Explore Resources</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
