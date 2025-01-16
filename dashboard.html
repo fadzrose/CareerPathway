@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Pathway Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            height: 100vh;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background-color: #00a2d1;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            align-items: center;
+            background-color: #e8f5fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            background-color: #ddd; /* Placeholder for profile picture */
+            margin-left: 20px; /* Adjust this value to move the heading to the right */
+        
+        }
+        .profile div {
+            font-size: 18px;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #e8f5fc;
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .card button {
+            background-color: #00a2d1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .card button:hover {
+            background-color: #0079a3;
+        }
+
+        /* Assessment Table */
+        .assessment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            transform-origin: top left;
+            margin-left: 20px; /* Adjust this value to move the heading to the right */
+        }
+        .assessment-table th, .assessment-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .assessment-table th {
+            background-color: #00a2d1;
+            color: white;
+        }
+        .assessment-table td a {
+            color: #00a2d1;
+            text-decoration: none;
+        }
+        .assessment-table td a:hover {
+            text-decoration: underline;
+        }
+        h3 {
+            margin-left: 30px; /* Adjust this value to move the heading to the right */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Career Pathway</h3>
+        <a href="#">Dashboard</a>
+        <a href="#">Skills</a>
+        <a href="#">Career</a>
+        <a href="#">Progress</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">Welcome to Career Pathway Platform System</div>
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="profile-placeholder.png" alt="Profile Picture">
+            <div>
+                <p><strong>Siti Saleha</strong></p>
+                <p>Email: leha@gmail.com</p>
+                <p>Member Since: January 2024</p>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="cards">
+            <div class="card">
+                <h3>Skills Assessment</h3>
+                <p>Evaluate your skills to get personalized career recommendations.</p>
+                <button>Start Assessment</button>
+            </div>
+            <div class="card">
+                <h3>Career Recommendations</h3>
+                <p>Explore careers tailored to your skills and preferences.</p>
+                <button>View Recommendations</button>
+            </div>
+            <div class="card">
+                <h3>Learning Resources</h3>
+                <p>Access resources to develop skills needed for your dream career.</p>
+                <button>View Resources</button>
+            </div>
+            <div class="card">
+                <h3>Progress Tracker</h3>
+                <p>Monitor your learning and career development progress.</p>
+                <button>Track Progress</button>
+            </div>
+        </div>
+
+        <!-- Assessment List -->
+            <h3>Your Assessment List</h3>
+            <table class="assessment-table">
+                <thead>
+                    <tr>
+                        <th>Assessment Name</th>
+                        <th>Date Taken</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Technical Skills Assessment</td>
+                    <td>2024-11-30</td>
+                    <td>85%</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Leadership Assessment</td>
+                    <td>2024-11-20</td>
+                    <td>78%</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Problem-Solving Test</td>
+                    <td>2024-11-10</td>
+                    <td>92%</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
